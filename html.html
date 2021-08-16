@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        .btn primary {
+            background: #4426ef !important;
+            border-color: #2633ef !important;
+        }
+        </style>
+</head>
+
+<body>
+
+<section class="form">
+    <div class="container">
+    <h3 class="text-center mt-4" style color=": #134574">Jamb Registration Form</h3>
+    <form class="row g-2 needs-validation" novalidate method="post" action="">
+        <div class="mb-3 col-sm-6">
+            <label for="first_name" class="form-label">First Name<span class="text-success">*</span></label>
+            <input type="text" class="form-control" name="first_name" id="first_name"
+                   aria-describedby="first_name" required>
+            <div class="invalid-feedback">
+                
+            </div>
+        </div>
+        <div class="mb-3 col-sm-6">
+            <label for="last_name" class="form-label">Last Name<span class="text-danger">*</span></label>
+            <input type="text" class="form-control" name="last_name" id="last_name"
+                   aria-describedby="last_name" required>
+            <div class="invalid-feedback">
+                
+            </div>
+        </div>
+        <div class="mb-3 col-sm-6">
+            <label for="email" class="form-label">Email<span class="text-danger">*</span></label>
+            <input type="email" class="form-control" name="email" id="email" aria-describedby="email"
+                   required>
+            <div class="invalid-feedback">
+                
+            </div>
+        </div>
+        <div class="mb-3 col-sm-6">
+            <label for="last_name" class="form-label">Phone/Mobile<span class="text-danger">*</span></label>
+            <input type="tel" class="form-control" name="phone" id="phone" aria-describedby="phone"
+                   required>
+            <div class="invalid-feedback">
+                
+            </div>
+        </div>
+        <div class="mb-3 col-md-12">
+            <label for="address" class="form-label">Address</label>
+            <input type="text" class="form-control" name="address" id="address" aria-describedby="address">
+        </div>
+        <div class="mb-3 col-md-6">
+            <label for="course_id" class="form-label">Course<span class="text-danger">*</span></label>
+            <select name="course_id" id="course_id" class="form-select" required>
+                <option value="">Select Course</option>
+                                            <option value="7">Computer Technology</option>
+                                            <option value="8">Computer Science</option>
+                                            <option value="6">Medicine and Surgery</option>
+                                            <option value="5">Mass Communication</option>
+                                            <option value="3">Banking and Finance</option>
+                                            <option value="1">Statistics</option>
+                                            <option value="12">Mechanical Engineering</option>
+                                            <option value="11">Civil Engineering</option>
+                                            <option value="9">Electrical Engineering</option>
+                                            <option value="2">English Language</option>
+                                            <option value="4">Art and Theatre</option>
+                                            <option value="10">Food Technology</option>
+                                    </select>
+            <div class="invalid-feedback">
+                
+            </div>
+        </div>
+        <div class="mb-3 col-md-6">
+                           
+            </div>
+        </div>
+        <div class="col-12 text-center">
+            <button class="btn btn-lg btn-primary px-5" type="submit">Register</button>
+        </div>
+
+    </form>
+</div>
+</section>
+<script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (function () {
+        'use strict'
+
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.querySelectorAll('.needs-validation')
+
+        // Loop over them and prevent submission
+        Array.prototype.slice.call(forms)
+            .forEach(function (form) {
+                form.addEventListener('submit', function (event) {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                    }
+
+                    form.classList.add('was-validated')
+                }, false)
+            })
+    })()
+</script>
+
+
+<!-- Footer script goes here -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+
